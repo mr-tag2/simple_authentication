@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Iranyekan";
+  src: url("/fonts/Qs_Iranyekan.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  font-family: "Iranyekan";
+  font-size: 12px;
+  background-image: url("../images/backGround.png");
+  background-size: cover;
+}
+
+.navbar ul,
+.navbar ul li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.navbar ul {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.navbar ul.mnu-left {
+  width: 20%;
+}
+
+.navbar ul.mnu-right {
+  width: 50%;
+}
+
+.navbar ul li,
+.navbar ul li a {
+  color: #063468;
+  font-size: 12px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.c-fff {
+  color: #fff !important;
+}
+
+.img-menu {
+  width: 20px !important;
+  margin-left: 5px;
+}
+
+.btn {
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.img-side-container {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.from-section {
+  width: 60%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%;
+}
+
+.from-section-header {
+  width: 60%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.img-side-box {
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.top-img-side-box {
+  text-align: start;
+  padding-right: 25%;
+}
+.forget-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-img-empty {
+  height: 80px;
+}
+
+.forget-text a {
+  color: #007bff !important;
+  text-decoration: underline !important;
+}
+
+.text-confirm-email {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+
+.div-confirm-email {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+.code-input {
+  border: 0;
+  height: 30px;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #0ac7e2;
+  border-color: #0ac7e2;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0a65cd;
+  border-color: #0a65cd;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
