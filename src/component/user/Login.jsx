@@ -13,7 +13,7 @@ const Login = () => {
 
   const loginHandler = (e) => {
     e.preventDefault();
-    if (email == "" || password == "") {
+    if (email === "" || password === "") {
       warningMessage("لطفا همه اطلاعات را وارد کنید.");
       return;
     }
@@ -34,27 +34,31 @@ const Login = () => {
         onSubmit={loginHandler}
         className="container text-right from-section"
       >
-        <div className="form-group col-10">
+        <div className="form-group col-10 form-group-custom-lable">
           <input
             type="text"
+            id="txtEmail"
+            name="txtEmail"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
             value={email}
+            placeholder=" "
             className="form-control"
-            placeholder="ایمیل"
           />
+          <label htmlFor="txtEmail">ایمیل</label>
         </div>
-        <div className="form-group col-10">
+        <div className="form-group col-10 form-group-custom-lable">
           <input
-            type="password"
+            type="text"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
             value={password}
+            placeholder=" "
             className="form-control"
-            placeholder="گذرواژه"
           />
+          <label htmlFor="">گذرواژه</label>
         </div>
         <div className="form-group col-10 row">
           <div className="col-3 form-group">

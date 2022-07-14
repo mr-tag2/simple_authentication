@@ -2,7 +2,7 @@ import React from "react";
 const SideForm = ({ version }) => {
   return (
     <div className="img-side-container">
-      {version == "3" ? (
+      {version === "3" ? (
         <div className="img-side-box top-img-side-box">
           <img
             className="img-side"
@@ -19,7 +19,7 @@ const SideForm = ({ version }) => {
           src={
             process.env.PUBLIC_URL +
             "/images/Frame" +
-            (version == "3" ? "1" : "2") +
+            (version === "3" ? "1" : "2") +
             ".png"
           }
           alt=""

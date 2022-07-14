@@ -25,7 +25,7 @@ const PasswordRecovery = () => {
 
   const getCodeWithEmail = (e) => {
     e.preventDefault();
-    if (email == "") {
+    if (email === "") {
       warningMessage("لطفا ایمیل را وارد کنید.");
       return;
     }

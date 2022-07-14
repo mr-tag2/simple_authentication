@@ -5,7 +5,7 @@ import { userRegister } from "../../actions/user";
 import { errorMessage, warningMessage } from "../../utils/messages";
 import SideForm from "../common/SideForm";
 
-const Register = () => {
+const Register2 = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,11 +16,16 @@ const Register = () => {
 
   const registerHandler = (e) => {
     e.preventDefault();
-    if (fullname == "" || email == "" || password == "" || rePassword == "") {
+    if (
+      fullname === "" ||
+      email === "" ||
+      password === "" ||
+      rePassword === ""
+    ) {
       warningMessage("لطفا همه اطلاعات را وارد کنید.");
       return;
     }
-    if (password != rePassword) {
+    if (password !== rePassword) {
       errorMessage("گذرواژه و تکرار گذرواژه باهم برابر نیستند.");
       return;
     }
@@ -40,11 +45,12 @@ const Register = () => {
     <div>
       <SideForm version="2" /> {/* 40% */}
       <form
-        onSubmit={registerHandler}
         action=""
+        onSubmit={registerHandler}
         className="container text-right from-section"
       >
         <div className="form-group col-10">
+          <label htmlFor="">نام و نام خانوادگی</label>
           <input
             type="text"
             onChange={(e) => {
@@ -52,10 +58,10 @@ const Register = () => {
             }}
             value={fullname}
             className="form-control"
-            placeholder="نام و نام خانوادگی"
           />
         </div>
         <div className="form-group col-10">
+          <label htmlFor="">ایمیل</label>
           <input
             type="text"
             onChange={(e) => {
@@ -63,11 +69,11 @@ const Register = () => {
             }}
             value={email}
             className="form-control"
-            placeholder="ایمیل"
           />
         </div>
         <div className="form-group col-10 row pl-0">
           <div className="form-group col-6">
+            <label htmlFor="">گذرواژه</label>
             <input
               type="password"
               onChange={(e) => {
@@ -75,10 +81,10 @@ const Register = () => {
               }}
               value={password}
               className="form-control"
-              placeholder="گذرواژه"
             />
           </div>
           <div className="form-group col-6 pl-0">
+            <label htmlFor="">تکرار گذرواژه</label>
             <input
               type="password"
               onChange={(e) => {
@@ -86,7 +92,6 @@ const Register = () => {
               }}
               value={rePassword}
               className="form-control"
-              placeholder=" تکرار گذرواژه"
             />
           </div>
         </div>
@@ -94,7 +99,7 @@ const Register = () => {
           <div className="col-3 form-group">
             <input
               type={"submit"}
-              className="col-12 btn btn-primary"
+              className="col-12 btn btn-info"
               value={"عضویت"}
             />
           </div>
@@ -109,7 +114,7 @@ const Register = () => {
             </button>
           </div>
           <div className="col-6 form-group forget-text">
-            <NavLink className="" to={"/simpleAuthentication/login"}>
+            <NavLink className="" to={"/simpleAuthentication/login2"}>
               حساب کاربری دارم!
             </NavLink>
           </div>
@@ -119,4 +124,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Register2;
