@@ -68,8 +68,8 @@ const Login = () => {
               value={"ورود"}
             />
           </div>
-          <div className="col-3 form-group">
-            <button className="col-12 btn btn-light">
+          <div className="col-4 form-group">
+            <button className="col-12 btn btn-outline-primary">
               حساب گوگل
               <img
                 className="mr-2"
@@ -78,7 +78,7 @@ const Login = () => {
               />
             </button>
           </div>
-          <div className="col-6 form-group forget-text">
+          <div className="col-5 form-group forget-text">
             <NavLink className="" to={"/simpleAuthentication/passwordrecovery"}>
               گذر واژه خود را فراموش کرده اید؟
             </NavLink>

@@ -15,7 +15,6 @@ const Dashboard = () => {
           <Route path="passwordrecovery" element={<PasswordRecovery />} />
           <Route path="confirmemail" element={<ConfirmEmail />} />
           <Route path="register" element={<Register />} />
-          <Route path="login" element={<Login />} />
           <Route index element={<Login />} />
         </Route>
       </Routes>

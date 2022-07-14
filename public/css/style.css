@@ -12,6 +12,11 @@ body {
   background-size: cover;
 }
 
+.app-project {
+  width: 90%;
+  margin: auto;
+}
+
 .navbar ul,
 .navbar ul li {
   display: inline-flex;
@@ -25,19 +30,33 @@ body {
   margin-top: 2%;
 }
 
+.navbar ul.mnu-right {
+  width: 70%;
+}
+
 .navbar ul.mnu-left {
   width: 20%;
 }
 
-.navbar ul.mnu-right {
-  width: 50%;
+.navbar ul.mnu-left li {
+  flex-direction: row-reverse;
 }
 
-.navbar ul li,
-.navbar ul li a {
+input:disabled,
+button:disabled {
+  cursor: not-allowed;
+}
+
+.navbar ul li .btn {
   color: #063468;
   font-size: 12px;
   width: 100%;
+}
+
+.navbar ul li a.main-menu {
+  color: #063468;
+  font-size: 12px;
+  margin-left: 30px;
 }
 
 .text-center {
@@ -73,7 +92,7 @@ body {
   float: right;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 .from-section-header {
@@ -93,6 +112,7 @@ body {
   text-align: start;
   padding-right: 25%;
 }
+
 .forget-text {
   display: flex;
   align-items: center;
@@ -121,6 +141,7 @@ body {
   margin-top: 2%;
   flex-wrap: wrap;
 }
+
 .code-input {
   border: 0;
   height: 30px;
@@ -150,12 +171,14 @@ body {
   font-size: 14px;
   pointer-events: none;
 }
+
 .form-group-custom-lable input:focus + label,
 .form-group-custom-lable input:not(:placeholder-shown) + label {
   opacity: 1;
   transform: scale(0.9) translateY(-150%);
   color: #000;
 }
+
 .form-group-custom-lable input:focus {
   border: 1px solid #000;
   outline-color: #000;
@@ -169,6 +192,7 @@ body {
 .form-group-custom-lable {
   padding: 8px;
 }
+
 .form-group-custom-lable label,
 .form-group-custom-lable input {
   transition: all 0.2s;

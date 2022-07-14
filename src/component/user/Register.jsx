@@ -5,7 +5,7 @@ import { userRegister } from "../../actions/user";
 import { errorMessage, warningMessage } from "../../utils/messages";
 import SideForm from "../common/SideForm";
 
-const Register2 = () => {
+const Register = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -47,10 +47,10 @@ const Register2 = () => {
       <form
         action=""
         onSubmit={registerHandler}
+        autoComplete="off"
         className="container text-right from-section"
       >
-        <div className="form-group col-10">
-          <label htmlFor="">نام و نام خانوادگی</label>
+        <div className="form-group col-10 form-group-custom-lable">
           <input
             type="text"
             onChange={(e) => {
@@ -58,10 +58,12 @@ const Register2 = () => {
             }}
             value={fullname}
             className="form-control"
+            autoComplete="off"
+            placeholder=" "
           />
+          <label htmlFor="">نام و نام خانوادگی</label>
         </div>
-        <div className="form-group col-10">
-          <label htmlFor="">ایمیل</label>
+        <div className="form-group col-10 form-group-custom-lable">
           <input
             type="text"
             onChange={(e) => {
@@ -69,11 +71,13 @@ const Register2 = () => {
             }}
             value={email}
             className="form-control"
+            autoComplete="off"
+            placeholder=" "
           />
+          <label htmlFor="">ایمیل</label>
         </div>
-        <div className="form-group col-10 row pl-0">
-          <div className="form-group col-6">
-            <label htmlFor="">گذرواژه</label>
+        <div className="form-group col-10 row pl-0 ">
+          <div className="form-group col-6 form-group-custom-lable">
             <input
               type="password"
               onChange={(e) => {
@@ -81,10 +85,12 @@ const Register2 = () => {
               }}
               value={password}
               className="form-control"
+              autoComplete="off"
+              placeholder=" "
             />
+            <label htmlFor="">گذرواژه</label>
           </div>
-          <div className="form-group col-6 pl-0">
-            <label htmlFor="">تکرار گذرواژه</label>
+          <div className="form-group col-6 pl-0 form-group-custom-lable">
             <input
               type="password"
               onChange={(e) => {
@@ -92,7 +98,10 @@ const Register2 = () => {
               }}
               value={rePassword}
               className="form-control"
+              autoComplete="off"
+              placeholder=" "
             />
+            <label htmlFor="">تکرار گذرواژه</label>
           </div>
         </div>
         <div className="form-group col-10 row">
@@ -103,8 +112,8 @@ const Register2 = () => {
               value={"عضویت"}
             />
           </div>
-          <div className="col-3 form-group">
-            <button className="col-12 btn btn-light">
+          <div className="col-4 form-group">
+            <button className="col-12 btn btn-outline-primary">
               حساب گوگل
               <img
                 className="mr-2"
@@ -113,8 +122,8 @@ const Register2 = () => {
               />
             </button>
           </div>
-          <div className="col-6 form-group forget-text">
-            <NavLink className="" to={"/simpleAuthentication/login2"}>
+          <div className="col-5 form-group forget-text">
+            <NavLink className="" to={"/simpleAuthentication/"}>
               حساب کاربری دارم!
             </NavLink>
           </div>
@@ -124,4 +133,4 @@ const Register2 = () => {
   );
 };
 
-export default Register2;
+export default Register;
