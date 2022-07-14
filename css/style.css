@@ -141,3 +141,38 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.form-group-custom-lable label {
+  position: absolute;
+  padding-right: 10px;
+  top: 13px;
+  cursor: text;
+  font-size: 14px;
+  pointer-events: none;
+}
+.form-group-custom-lable input:focus + label,
+.form-group-custom-lable input:not(:placeholder-shown) + label {
+  opacity: 1;
+  transform: scale(0.9) translateY(-150%);
+  color: #000;
+}
+.form-group-custom-lable input:focus {
+  border: 1px solid #000;
+  outline-color: #000;
+}
+
+.form-group-custom-lable input {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-group-custom-lable {
+  padding: 8px;
+}
+.form-group-custom-lable label,
+.form-group-custom-lable input {
+  transition: all 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
