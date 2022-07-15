@@ -120,7 +120,7 @@ const ConfirmEmail = () => {
           />
           <img
             className="img-menu"
-            src="/images/fi-rr-life-ring 1.svg"
+            src={process.env.PUBLIC_URL + "/images/fi-rr-life-ring 1.svg"}
             alt=""
           />
         </div>

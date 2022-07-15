@@ -32,6 +32,7 @@ const Login = () => {
       <form
         action=""
         onSubmit={loginHandler}
+        autoComplete="off"
         className="container text-right from-section"
       >
         <div className="form-group col-10 form-group-custom-lable">
@@ -50,7 +51,7 @@ const Login = () => {
         </div>
         <div className="form-group col-10 form-group-custom-lable">
           <input
-            type="text"
+            type="password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
