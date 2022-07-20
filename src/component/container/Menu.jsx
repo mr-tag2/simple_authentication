@@ -56,18 +56,18 @@ const Menu = () => {
         </ul>
         <ul className="navbar-nav mnu-left">
           {registerPaths.includes(pathname) ? (
-            <li className="nav-item col-12 text-left">
+            <li className="nav-item col-md-12 text-left">
               <NavLink
-                className="nav-link btn btn-primary col-9"
+                className="nav-link btn btn-primary col-md-9"
                 to="/simpleAuthentication/"
               >
                 <span className="w-100 c-fff text-center">ورود </span>
               </NavLink>
             </li>
           ) : (
-            <li className="nav-item col-12 text-left">
+            <li className="nav-item col-md-12 text-left">
               <NavLink
-                className="nav-link btn btn-primary col-9"
+                className="nav-link btn btn-primary col-md-9"
                 to="/simpleAuthentication/register"
               >
                 <span className="w-100 c-fff text-center">ثبت نام </span>

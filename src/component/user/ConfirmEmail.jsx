@@ -18,7 +18,7 @@ const ConfirmEmail = () => {
   const confirmHandler = (e) => {
     e.preventDefault();
     const value = firstCode + secondCode + thirdCode + fourthCode;
-    if (value != "0000") {
+    if (value !== "0000") {
       errorMessage("کد فعال سازی اشتباه است.");
       return;
     }
@@ -43,7 +43,7 @@ const ConfirmEmail = () => {
 
   return (
     <div className="container text-center text-confirm-email">
-      <h6 className="col-7">
+      <h6 className="col-md-7 pr-5 pl-4 text-right line-height-text">
         مطئمن باشین این یه متن از پیش آماده شده نیست ، ما خیلی خوشحالیم که شما
         از امروز همراه ما هستی ، قطعا قول میدیم هر روز شما هم اینطوری خوب و خوش
         باشه چون تلاشمون اینه که کنار خلق ارزش ، حس خوبی هم از کار با محصولات ما
@@ -53,11 +53,11 @@ const ConfirmEmail = () => {
         درخواست بدین، کامپیوتر ها خیلی هم باهوش نیستن وممکنه اشتباه کرده باشن
         😉)
       </h6>
-      <form className="col-7 div-confirm-email" onSubmit={confirmHandler}>
-        <label className="col-12">
+      <form className="col-md-7 div-confirm-email" onSubmit={confirmHandler}>
+        <label className="col-md-12">
           <b>کد فعال سازی</b>
         </label>
-        <div className="col-9 row div-confirm-email mb-2">
+        <div className="col-md-5 row div-confirm-email mb-2">
           <input
             type="text"
             onChange={(e) => {
@@ -65,7 +65,7 @@ const ConfirmEmail = () => {
             }}
             value={firstCode}
             maxLength="1"
-            className="form-control col-1 text-center"
+            className="form-control col-md-2-5 text-center"
           />
           <input
             type="text"
@@ -74,7 +74,7 @@ const ConfirmEmail = () => {
             }}
             value={secondCode}
             maxLength="1"
-            className="form-control col-1 mr-2 text-center"
+            className="form-control col-md-2-5 mr-3 text-center"
           />
           <input
             type="text"
@@ -83,7 +83,7 @@ const ConfirmEmail = () => {
             }}
             value={thirdCode}
             maxLength="1"
-            className="form-control col-1 mr-2 text-center"
+            className="form-control col-md-2-5 mr-3 text-center"
           />
           <input
             type="text"
@@ -92,27 +92,27 @@ const ConfirmEmail = () => {
             }}
             value={fourthCode}
             maxLength="1"
-            className="form-control col-1 mr-2 text-center"
+            className="form-control col-md-2-5 mr-3 text-center"
           />
         </div>
-        <div className="col-12 row">
-          <div className="col-3"></div>
-          <div className="col-6 ">
+        <div className="col-md-12 row">
+          <div className="col-md-3"></div>
+          <div className="col-md-6 box-btn-email">
             <input
               type="submit"
-              className="col-4 btn btn-primary"
+              className="col-md-5 btn btn-primary"
               value="تایید ایمیل"
             />
           </div>
-          <div className="col-3  forget-text">
-            <a className="cursor-pointer" onClick={getCodeNumber}>
+          <div className="col-md-3  forget-text">
+            <span className="cursor-pointer link-style" onClick={getCodeNumber}>
               دریافت مجدد ایمیل
-            </a>
+            </span>
           </div>
         </div>
       </form>
-      <div className="col-7 div-confirm-email mt-5">
-        <div className="col-7">
+      <div className="col-md-7 div-confirm-email mt-5">
+        <div className="col-md-7">
           <img
             className="img-menu"
             src={process.env.PUBLIC_URL + "/images/call-outgoing 1.svg"}

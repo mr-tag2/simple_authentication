@@ -35,7 +35,7 @@ const Login = () => {
         autoComplete="off"
         className="container text-right from-section"
       >
-        <div className="form-group col-10 form-group-custom-lable">
+        <div className="form-group col-md-10 form-group-custom-lable">
           <input
             type="text"
             id="txtEmail"
@@ -49,7 +49,7 @@ const Login = () => {
           />
           <label htmlFor="txtEmail">ایمیل</label>
         </div>
-        <div className="form-group col-10 form-group-custom-lable">
+        <div className="form-group col-md-10 form-group-custom-lable">
           <input
             type="password"
             onChange={(e) => {
@@ -61,25 +61,25 @@ const Login = () => {
           />
           <label htmlFor="">گذرواژه</label>
         </div>
-        <div className="form-group col-10 row">
-          <div className="col-3 form-group">
+        <div className="form-group col-md-10 row">
+          <div className="col-md-3 form-group">
             <input
               type={"submit"}
-              className="col-12 btn btn-primary"
+              className="col-md-12 btn btn-primary"
               value={"ورود"}
             />
           </div>
-          <div className="col-4 form-group">
-            <button className="col-12 btn btn-outline-primary">
+          <div className="col-md-4 form-group">
+            <button className="col-md-12 btn btn-primary-outline btn-google">
               حساب گوگل
               <img
-                className="mr-2"
+                className="img-google"
                 src={process.env.PUBLIC_URL + "/images/search 1.png"}
                 alt=""
               />
             </button>
           </div>
-          <div className="col-5 form-group forget-text">
+          <div className="col-md-5 form-group forget-text">
             <NavLink className="" to={"/simpleAuthentication/passwordrecovery"}>
               گذر واژه خود را فراموش کرده اید؟
             </NavLink>

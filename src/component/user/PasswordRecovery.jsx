@@ -37,7 +37,7 @@ const PasswordRecovery = () => {
     e.preventDefault();
 
     const value = firstCode + secondCode + thirdCode + fourthCode;
-    if (value != "0000") {
+    if (value !== "0000") {
       errorMessage("کد فعال سازی اشتباه است.");
       return;
     }
@@ -46,7 +46,7 @@ const PasswordRecovery = () => {
 
   const changeAndLogin = (e) => {
     e.preventDefault();
-    if (password != rePassword) {
+    if (password !== rePassword) {
       errorMessage("گذرواژه و تکرار گذرواژه باهم برابر نیستند.");
       return;
     }
@@ -58,33 +58,39 @@ const PasswordRecovery = () => {
     <div>
       <SideForm version="2" />
       <form action="" className="container text-right from-section-header">
-        <div className="form-group col-10 row mr-0">
-          <label htmlFor="" className="col-12 p-0">
+        <div className="form-group col-md-10 row mr-0">
+          <h6 className="text-right line-height-text mb-4">
+            گذرواژه خود ا فراموش کرده اید . هیج ایرادی نداره <br />
+            ایمیل خودتون رو برامون بنویسین تا ما یک کد فعال سازی ارسال کنیم .
+            <br />
+            کد رو وارد کنین و گذرواژه جدیدتون رو بنویسین برامون . به همین سادگی
+          </h6>
+          <label htmlFor="" className="col-md-12 p-0">
             ایمیل
           </label>
-          <div className="col-6 row">
+          <div className="col-md-6 row">
             <input
               type="text"
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
               value={email}
-              className="form-control col-12"
+              className="form-control col-md-12"
             />
           </div>
           <button
-            className="col-3 mr-5 btn btn-info"
+            className="col-md-3 mr-5 btn btn-primary"
             onClick={getCodeWithEmail}
           >
             ارسال مجدد ایمیل
           </button>
         </div>
 
-        <div className="form-group col-10 row mr-0">
-          <label htmlFor="" className="col-12 p-0">
+        <div className="form-group col-md-10 row mr-0">
+          <label htmlFor="" className="col-md-12 p-0">
             کد فعال سازی
           </label>
-          <div className="col-6 row">
+          <div className="col-md-6 row">
             <input
               type="text"
               onChange={(e) => {
@@ -92,7 +98,7 @@ const PasswordRecovery = () => {
               }}
               value={firstCode}
               maxLength="1"
-              className="form-control col-2 text-center"
+              className="form-control col-md-2-5 text-center"
               disabled={disabledScopeOne ? "disabled" : ""}
             />
             <input
@@ -102,7 +108,7 @@ const PasswordRecovery = () => {
               }}
               value={secondCode}
               maxLength="1"
-              className="form-control col-2 mr-2 text-center"
+              className="form-control col-md-2-5 mr-3 text-center"
               disabled={disabledScopeOne ? "disabled" : ""}
             />
             <input
@@ -112,7 +118,7 @@ const PasswordRecovery = () => {
               }}
               value={thirdCode}
               maxLength="1"
-              className="form-control col-2 mr-2 text-center"
+              className="form-control col-md-2-5 mr-3 text-center"
               disabled={disabledScopeOne ? "disabled" : ""}
             />
             <input
@@ -122,12 +128,12 @@ const PasswordRecovery = () => {
               }}
               value={fourthCode}
               maxLength="1"
-              className="form-control col-2 mr-2 text-center"
+              className="form-control col-md-2-5 mr-3 text-center"
               disabled={disabledScopeOne ? "disabled" : ""}
             />
           </div>
           <button
-            className="col-3 mr-5 btn btn-info"
+            className="col-md-3 mr-5 btn btn-primary"
             disabled={disabledScopeOne ? "disabled" : ""}
             onClick={confirmEmail}
           >
@@ -135,8 +141,8 @@ const PasswordRecovery = () => {
           </button>
         </div>
 
-        <div className="form-group col-10 row pl-0">
-          <div className="form-group col-6">
+        <div className="form-group col-md-10 row pl-0">
+          <div className="form-group col-md-6">
             <label htmlFor="">گذرواژه</label>
             <input
               type="password"
@@ -148,7 +154,7 @@ const PasswordRecovery = () => {
               disabled={disabledScopeTwo ? "disabled" : ""}
             />
           </div>
-          <div className="form-group col-6 pl-0">
+          <div className="form-group col-md-6 pl-0">
             <label htmlFor="">تکرار گذرواژه</label>
             <input
               type="password"
@@ -161,17 +167,17 @@ const PasswordRecovery = () => {
             />
           </div>
         </div>
-        <div className="form-group col-10 row">
-          <div className="col-4 form-group">
+        <div className="form-group col-md-10 row pl-0">
+          <div className="col-md-4 form-group">
             <button
-              className="col-12 btn btn-primary"
+              className="col-md-12 btn btn-primary"
               disabled={disabledScopeTwo ? "disabled" : ""}
               onClick={changeAndLogin}
             >
               ذخیره گذرواژه و ورود
             </button>
           </div>
-          <div className="col-8 form-group forget-text">
+          <div className="col-md-8 form-group forget-text pl-0">
             <NavLink className="" to={"/simpleAuthentication/register"}>
               حساب کاربری ندارم!
             </NavLink>
