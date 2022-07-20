@@ -4,7 +4,6 @@ import { NavLink, useLocation } from "react-router-dom";
 const Menu = () => {
   const registerPaths = [
     "/simpleAuthentication/register",
-    "/simpleAuthentication/register2",
     "/simpleAuthentication/confirmemail",
   ];
   const { pathname } = useLocation();

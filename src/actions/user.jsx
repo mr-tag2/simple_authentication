@@ -38,6 +38,7 @@ export const userRegister = ({ fullname, email, password }) => {
     }
   };
 };
+
 export const userChangePassWord = ({ email, password }) => {
   return async (dispatch, getState) => {
     const data = await changePassWordByEmail({ email, password });
