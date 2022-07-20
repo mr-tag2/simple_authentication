@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/simpleAuthentication/static/js/main.40e9fefa.js",
+    "main.js": "/simpleAuthentication/static/js/main.7871a98b.js",
     "index.html": "/simpleAuthentication/index.html",
-    "main.40e9fefa.js.map": "/simpleAuthentication/static/js/main.40e9fefa.js.map"
+    "main.7871a98b.js.map": "/simpleAuthentication/static/js/main.7871a98b.js.map"
   },
   "entrypoints": [
-    "static/js/main.40e9fefa.js"
+    "static/js/main.7871a98b.js"
   ]
 }
