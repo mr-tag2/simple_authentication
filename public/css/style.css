@@ -56,6 +56,10 @@ body {
   margin-left: 30px;
 }
 
+.navbar ul li a.main-menu:hover {
+  color: #0a65cd;
+}
+
 .img-menu {
   width      : 20px !important;
   margin-left: 5px;
@@ -88,6 +92,7 @@ button:disabled {
   display        : flex;
   align-items    : center;
   justify-content: flex-end;
+  padding-left   : 0;
 }
 
 .forget-text a {
@@ -244,6 +249,10 @@ button:disabled {
 
 .c-fff {
   color: #fff !important;
+}
+
+.pr-8px {
+  padding-right: 8px;
 }
 
 .line-height-text {

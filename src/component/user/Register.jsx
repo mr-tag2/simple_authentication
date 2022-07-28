@@ -105,7 +105,7 @@ const Register = () => {
           </div>
         </div>
         <div className="form-group col-md-10 row">
-          <div className="col-md-3 form-group">
+          <div className="col-md-3 form-group pr-8px">
             <input
               type={"submit"}
               className="col-md-12 btn btn-primary"
