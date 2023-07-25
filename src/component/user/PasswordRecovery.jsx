@@ -51,7 +51,7 @@ const PasswordRecovery = () => {
       return;
     }
     dispatch(userChangePassWord({ email, password }));
-    navigate("/simpleAuthentication");
+    navigate("/");
   };
 
   return (
@@ -178,7 +178,7 @@ const PasswordRecovery = () => {
             </button>
           </div>
           <div className="col-md-8 form-group forget-text pl-0">
-            <NavLink className="" to={"/simpleAuthentication/register"}>
+            <NavLink className="" to={"/register"}>
               حساب کاربری ندارم!
             </NavLink>
           </div>

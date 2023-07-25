@@ -80,7 +80,7 @@ const Login = () => {
             </button>
           </div>
           <div className="col-md-5 form-group forget-text">
-            <NavLink className="" to={"/simpleAuthentication/passwordrecovery"}>
+            <NavLink className="" to={"/passwordrecovery"}>
               گذر واژه خود را فراموش کرده اید؟
             </NavLink>
           </div>

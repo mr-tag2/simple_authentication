@@ -31,7 +31,7 @@ const Register = () => {
     }
     dispatch(userRegister({ fullname, email, password }));
     emptyDatas();
-    navigate("/simpleAuthentication/confirmemail");
+    navigate("/confirmemail");
   };
 
   const emptyDatas = () => {
@@ -123,7 +123,7 @@ const Register = () => {
             </button>
           </div>
           <div className="col-md-5 form-group forget-text">
-            <NavLink className="" to={"/simpleAuthentication/"}>
+            <NavLink className="" to={"/"}>
               حساب کاربری دارم!
             </NavLink>
           </div>

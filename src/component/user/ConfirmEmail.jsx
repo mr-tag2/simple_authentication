@@ -23,7 +23,7 @@ const ConfirmEmail = () => {
       return;
     }
     successMessage("حساب شما فعال شد.");
-    navigate("/simpleAuthentication");
+    navigate("/");
     emptyDatas();
   };
 

@@ -18,7 +18,7 @@ const Menu = () => {
               src={process.env.PUBLIC_URL + "/images/fi-rr-grid 2.svg"}
               alt=""
             />
-            <NavLink className="nav-link main-menu" to="/simpleAuthentication">
+            <NavLink className="nav-link main-menu" to="/">
               امکانات سگمنتو
             </NavLink>
           </li>
@@ -28,7 +28,7 @@ const Menu = () => {
               src={process.env.PUBLIC_URL + "/images/fi-rr-play-alt 2.svg"}
               alt=""
             />
-            <NavLink className="nav-link main-menu" to="/simpleAuthentication">
+            <NavLink className="nav-link main-menu" to="/">
               ویدیو آموزشی
             </NavLink>
           </li>
@@ -38,7 +38,7 @@ const Menu = () => {
               src={process.env.PUBLIC_URL + "/images/fi-rr-diamond 2.svg"}
               alt=""
             />
-            <NavLink className="nav-link main-menu" to="/simpleAuthentication">
+            <NavLink className="nav-link main-menu" to="/">
               قیمت اشتراک ماهانه
             </NavLink>
           </li>
@@ -48,7 +48,7 @@ const Menu = () => {
               src={process.env.PUBLIC_URL + "/images/fi-rr-cookie 2.svg"}
               alt=""
             />
-            <NavLink className="nav-link main-menu" to="/simpleAuthentication">
+            <NavLink className="nav-link main-menu" to="/">
               همکاری با تیم سگمنتو
             </NavLink>
           </li>
@@ -58,7 +58,7 @@ const Menu = () => {
             <li className="nav-item col-md-12 text-left">
               <NavLink
                 className="nav-link btn btn-primary col-md-9"
-                to="/simpleAuthentication/"
+                to="/"
               >
                 <span className="w-100 c-fff text-center">ورود </span>
               </NavLink>
@@ -67,7 +67,7 @@ const Menu = () => {
             <li className="nav-item col-md-12 text-left">
               <NavLink
                 className="nav-link btn btn-primary col-md-9"
-                to="/simpleAuthentication/register"
+                to="/register"
               >
                 <span className="w-100 c-fff text-center">ثبت نام </span>
               </NavLink>
