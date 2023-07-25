@@ -11,7 +11,7 @@ const Dashboard = () => {
     <div className="app-project">
       <Menu />
       <Routes>
-        <Route path={"/simpleAuthentication/"}>
+        <Route path={"/"}>
           <Route path="passwordrecovery" element={<PasswordRecovery />} />
           <Route path="confirmemail" element={<ConfirmEmail />} />
           <Route path="register" element={<Register />} />
